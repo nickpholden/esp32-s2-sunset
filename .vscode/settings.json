@@ -9,5 +9,6 @@
     "circuitpython.board.version": "7.2.0",
     "python.analysis.diagnosticSeverityOverrides": {
         "reportMissingModuleSource": "none"
-    }
+    },
+    "circuitpython.board.vid": "0x239A"
 }
