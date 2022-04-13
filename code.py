@@ -39,7 +39,9 @@ print(sunset)
 dt = datetime.now()
 print(dt)
 
-ten_pm = dt + timedelta(hours=1)
+ten_pm = sunset + timedelta(hours=1)
+
+print(ten_pm)
 
 if sunset >= dt:
     setpin = digitalio.DigitalInOut(board.D5)
