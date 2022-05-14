@@ -31,7 +31,7 @@ dtstr = response.json()['currentDateTime']
 parsed = datetime.fromisoformat(dtstr[:-1])
 rtc.RTC().datetime = parsed.timetuple()
 
-response = requests.get("https://api.sunrise-sunset.org/json?lat=51.283970&lng=0.172400&formatted=0&date=%s" % str(date.today()))
+response = requests.get("https://api.sunrise-sunset.org/json?lat=1.283970&lng=0.172400&formatted=0&date=%s" % str(date.today()))
 dtstr = response.json()['results']['nautical_twilight_end']
 
 sunset = datetime.fromisoformat(dtstr).replace(tzinfo=None)
